@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Framework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#94224e;   /* Blue background */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+    color: white;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+nav a{
+    color: white;
+    margin-left: 30px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 70px;
+}
+
+.hero-text{
+    width: 50%;
+    color: white;
+}
+
+.hero-text h1{
+    font-size: 55px;
+    line-height: 65px;
+    font-weight: 800;
+}
+
+.hero-text p{
+    margin: 20px 0;
+    opacity: 0.9;
+    font-size: 16px;
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 15px 35px;
+    background: rgba(255,255,255,0.3);
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-image{
+    position: relative;
+}
+
+.hero-image img{
+    width: 450px;
+    border-radius: 15px;
+}
+
+.play-btn{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    background: #00d334;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<header>
+    <div class="logo">Framework</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Dropdown</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>We are a group of<br>financial specialists</h1>
+        <p>
+            Far far away, behind the word mountains, far from the countries Vokalia 
+            and Consonantia, there live the blind texts.
+        </p>
+
+        <button class="btn">SEE OUR SERVICES</button>
+    </div>
+
+    <div class="hero-image">
+        <img src="your-image.jpg" alt="image">
+        <div class="play-btn">▶</div>
+    </div>
+</section>
+
+</body>
+</html>
